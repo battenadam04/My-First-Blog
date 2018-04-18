@@ -27,6 +27,7 @@ class PostController extends Controller
     public function index()
     {
         $posts = Post::orderBy('id', 'desc')->paginate(10);
+
         return view('posts.index')->withPosts($posts);
     }
 
@@ -69,7 +70,7 @@ class PostController extends Controller
         if ($request->hasFile('featured_img')) {
           $image = $request->file('featured_img');
           $filename = time() . '.' . $image->getClientOriginalExtension();
-          $location = public_path('images/' . $filename);
+          $location = public_path('img/' . $filename);
           Image::make($image)->resize(800, 400)->save($location);
 
           $post->image = $filename;

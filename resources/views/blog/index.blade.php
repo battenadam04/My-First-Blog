@@ -4,7 +4,7 @@
 
 @section('content')
 
-
+  <div class="section">
 	<div class="row">
 		<div class="col-md-8 col-md-offset-2">
 			<h1>Blog</h1>
@@ -32,6 +32,7 @@
 			</div>
 		</div>
 	</div>
+  </div>
 
 
 @endsection

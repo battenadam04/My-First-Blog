@@ -3,7 +3,7 @@
 @section('title', '| Contact')
 
 @section('content')
-        <div class="row">
+        <div class="row section">
             <div class="col-md-12">
                 <h1>Contact Me</h1>
                 <hr>
