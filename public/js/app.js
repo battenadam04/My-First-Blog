@@ -13897,6 +13897,10 @@ var app = new Vue({
   el: '#app'
 });
 
+AOS.init({
+  duration: 1200
+});
+
 /***/ }),
 /* 13 */
 /***/ (function(module, exports, __webpack_require__) {

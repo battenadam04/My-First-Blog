@@ -8,7 +8,7 @@
 
     @include('partials._nav')
 
-    <div class="container">
+    <div class="container mainContainer col-sm-12">
       @include('partials._messages')
 
       @yield('content')

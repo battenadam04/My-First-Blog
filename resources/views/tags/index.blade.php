@@ -4,7 +4,7 @@
 
 @section('content')
 
-	<div class="row">
+	<div class="row section">
 		<div class="col-md-8">
 			<h1>Tags</h1>
 			<table class="table">
@@ -33,7 +33,7 @@
 					{{ Form::label('name', 'Name:') }}
 					{{ Form::text('name', null, ['class' => 'form-control']) }}
 
-					{{ Form::submit('Create New Tag', ['class' => 'btn btn-primary btn-block btn-h1-spacing']) }}
+					{{ Form::submit('Create New Tag', ['class' => 'btn btn-primary btn-block btn-h1-spacing margin']) }}
 				
 				{!! Form::close() !!}
 			</div>

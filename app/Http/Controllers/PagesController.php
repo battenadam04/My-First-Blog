@@ -33,9 +33,6 @@ class PagesController extends Controller {
 		return view('pages.about')->withData($data);
 	}
 
-	public function getContact() {
-		return view('pages.contact');
-	}
 
     public function getPortfolio() {
         return view('pages.portfolio');
@@ -43,6 +40,13 @@ class PagesController extends Controller {
 
     public function getService() {
         return view('pages.service');
+    }
+
+
+    public function getContact() {
+
+
+        return view('pages.contact');
     }
 
 	public function postContact(Request $request) {
@@ -59,7 +63,7 @@ class PagesController extends Controller {
 
 		Mail::send('emails.contact', $data, function($message) use ($data){
 			$message->from($data['email']);
-			$message->to('hello@devmarketer.io');
+			$message->to('adambatten@live.co.uk');
 			$message->subject($data['subject']);
 		});
 

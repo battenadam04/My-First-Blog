@@ -23,7 +23,11 @@
         "vue": "^2.5.7"
     },
     "dependencies": {
+        "aos": "^2.3.0",
+        "bootstrap-social": "^5.1.1",
+        "font-awesome": "^4.7.0",
         "livereload": "^0.7.0",
+        "social-logos": "^2.0.0",
         "webpack-mix": "^2.0.2",
         "webpack-watch-server": "^1.2.1"
     }

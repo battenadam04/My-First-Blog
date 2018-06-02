@@ -7,6 +7,7 @@
 	{!! Html::style('css/parsley.css') !!}
 	{!! Html::style('css/select2.min.css') !!}
 	<script src="//cdn.tinymce.com/4/tinymce.min.js"></script>
+	<script>tinymce.init({ selector:'textarea' });</script>
 
 	<script>
 		tinymce.init({
@@ -20,7 +21,7 @@
 
 @section('content')
 
-	<div class="row">
+	<div class="row section">
 		<div class="col-md-8 col-md-offset-2">
 			<h1>Create New Post</h1>
 			<hr>

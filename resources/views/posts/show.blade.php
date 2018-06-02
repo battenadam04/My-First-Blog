@@ -4,7 +4,7 @@
 
 @section('content')
 
-	<div class="row">
+	<div class="row section">
 		<div class="col-md-8">
 			<h1>{{ $post->title }}</h1>
 			
@@ -77,15 +77,15 @@
 					<div class="col-sm-6">
 						{!! Form::open(['route' => ['posts.destroy', $post->id], 'method' => 'DELETE']) !!}
 
-						{!! Form::submit('Delete', ['class' => 'btn btn-danger btn-block']) !!}
+						{!! Form::submit('Delete', ['class' => 'btn btn-primary btn-danger btn-block']) !!}
 
 						{!! Form::close() !!}
 					</div>
 				</div>
 
-				<div class="row">
+				<div class="row margin">
 					<div class="col-md-12">
-						{{ Html::linkRoute('posts.index', '<< See All Posts', array(), ['class' => 'btn btn-default btn-block btn-h1-spacing']) }}
+						{{ Html::linkRoute('posts.index', '<< See All Posts', array(), ['class' => 'btn btn-primary btn-block btn-h1-spacing']) }}
 					</div>
 				</div>
 

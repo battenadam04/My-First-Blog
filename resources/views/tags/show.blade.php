@@ -4,7 +4,7 @@
 
 @section('content')
 
-	<div class="row">
+	<div class="row section">
 		<div class="col-md-8">
 			<h1>{{ $tag->name }} Tag <small>{{ $tag->posts()->count() }} Posts</small></h1>
 		</div>
@@ -16,9 +16,8 @@
 				{{ Form::submit('Delete', ['class' => 'btn btn-danger btn-block', 'style' => 'margin-top:20px;']) }}
 			{{ Form::close() }}
 		</div>
-	</div>
 
-	<div class="row">
+
 		<div class="col-md-12">
 			<table class="table">
 				<thead>

@@ -4,8 +4,9 @@
 
 @section('content')
 	
-	<div class="row">
-		<div class="col-md-6 col-md-offset-3">
+	<div class="row account-section col-12 col-sm-6 col-md-offset-3">
+		<div class="col-md-10 col-md-offset-1">
+			<h1>Login</h1>
 			{!! Form::open() !!}
 
 				{{ Form::label('email', 'Email:') }}
